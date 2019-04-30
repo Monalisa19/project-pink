@@ -16,7 +16,9 @@
     text-align: center;
     padding: 23px 0;
     margin: 0;
-    border: 1px solid #e5e5e5;
+    background-color: @fontColorHeader;
+    border-bottom: 1px solid #010101;
+    border-top: 1px solid #485461;
     text-transform: uppercase;
   }
 
@@ -69,6 +71,17 @@
     content: "";
     background: @colorHeader;
     transform: rotate(-45deg);
+  }
+
+  .download {
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    width: 320px;
+    &:before {
+      content: " ";
+      display: block;
+      height: 463px;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 40% bottom;
+    }
   }
 
 }
@@ -91,7 +104,9 @@
     text-align: center;
     padding: 23px 0;
     margin: 0;
-    border: 1px solid #e5e5e5;
+    background-color: @fontColorHeader;
+    border-bottom: 1px solid #010101;
+    border-top: 1px solid #485461;
     text-transform: uppercase;
   }
 
@@ -146,4 +161,21 @@
     transform: rotate(-45deg);
   }
 
+  .download {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    width: 650px;
+    height: 460px;
+  }
 }
+
+@media (min-width: 1200px) {
+
+  .download {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    width: 1100px;
+    height: 460px;
+    background-size: cover;
+  }
+
+}
+

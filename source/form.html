@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк.Конкурс</title>
-<!--    <script>
+  <script>
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.min.js" async></script>-->
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-  <!--  <script defer src="js/svgxuse.min.js"></script>-->
+  <script defer src="js/svgxuse.min.js"></script>
   <header class="page-header">
     <nav class="main-nav">
       <a>
@@ -57,18 +57,18 @@
       <div class="information">
         <div class="user">
           <label class="user__label  user__label--fullname" for="surname">фамилия</label>
-          <input class="user-name__input  user-name__input--text" type="text" name="surname" id="surname" required value="Укажите фамилию *">
+          <input class="user__input  user__input--text" type="text" name="surname" id="surname" required value="Укажите фамилию *">
         </div>
         <div class="user">
           <label class="user__label  user__label--fullname" for="name">имя</label>
-          <input class="user-name__input  user-name__input--text" type="text" name="name" id="name" required value="Введите ваше имя *">
+          <input class="user__input  user__input--text" type="text" name="name" id="name" required value="Введите ваше имя *">
         </div>
         <div class="user">
           <label class="user__label  user__label--fullname" for="patronymic">отчество</label>
-          <input class="user-name__input  user-name__input--text" type="text" name="patronymic" id="patronymic" required value="Ну и отчество тоже *">
+          <input class="user__input  user__input--text" type="text" name="patronymic" id="patronymic" required value="Ну и отчество тоже *">
         </div>
       </div>
-      <fieldset class="form-travels__list">
+      <fieldset class="form-travels">
         <legend class="form-travels__title">Ваши безбашенные достижения в путешествии</legend>
         <div class="form-travels__checkbox">
           <input class="form-travels__input" type="checkbox" name="advance" id="advance-one" checked>
@@ -95,7 +95,7 @@
           <label class="form-travels__label" for="advance-six">Разгромил отель</label>
         </div>
       </fieldset>
-      <fieldset class="form-fields form-fields__contacts">
+      <fieldset class="form-fields form-fields-contacts">
         <legend class="form-fields__title">Контактная информация</legend>
         <div class="form-fields__number">
           <label class="form-fields__label--date" for="phone">номер телефона</label>
@@ -106,7 +106,7 @@
           <input class="form-fields__input--date" type="text" id="mail" required value="Введите почту*">
         </div>
       </fieldset>
-      <fieldset class="form-fields form-fields__app">
+      <fieldset class="form-fields form-fields-app">
         <legend class="form-fields__title">С каким приложение путешествовали?</legend>
         <div class="form-fields__radio">
           <input class="form-fields__radio-input" type="radio" id="ios" name="attachment" value="Pink для iOS" checked>
@@ -121,7 +121,7 @@
           <label class="form-fields__radio-label" for="windows-phone">Windows Phone</label>
         </div>
       </fieldset>
-      <fieldset class="form-fields form-fields__emotions">
+      <fieldset class="form-fields form-fields-emotions">
         <legend class="form-fields__title">Опишите свои эмоции</legend>
         <div class="form__fields-inner">
           <div class="form-fields__textarea-field  form-fields__textarea-fields--emotions">
@@ -129,10 +129,8 @@
           </div>
         </div>
       </fieldset>
-      <button class="form-fields__submit-btn  form-fields__submit-btn--submit" type="submit">отправить форму</button>
-      <div class="form-fields__element">
+      <button class="form-btn  form-btn--submit" type="submit">отправить форму</button>
         <div class="field"><sup>*</sup>__ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
-      </div>
     </form>
   </main>
   <footer class="page-footer">
