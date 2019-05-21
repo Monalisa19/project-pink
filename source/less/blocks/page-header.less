@@ -5,6 +5,12 @@
     color: @colorHeader;
   }
 
+  .main-nav__menu-header {
+    padding: 10px;
+    font-size: 0;
+    background: @fontColorHeader;
+  }
+
   .main-nav__list {
     margin: 0;
     padding: 0;
@@ -27,61 +33,20 @@
     color: @colorHeader;
   }
 
-  .logo {
-    position: relative;
-  }
-
-  .logo-top {
-    width: 147px;
-    height: 50px;
-  }
-
-  .menu-btn {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 45px;
-    height: 26px;
-    cursor: pointer;
-    border: none;
-    background: 0 0;
-    font-size: 0;
-    outline: none;
-  }
-
-  .menu-btn:before {
-    position: absolute;
-    top: 0;
-    left: 22px;
-    display: block;
-    width: 2px;
-    height: 24px;
-    content: "";
-    background: @colorHeader;
-    transform: rotate(45deg);
-  }
-
-  .menu-btn:after {
-    position: absolute;
-    top: 0;
-    left: 22px;
-    display: block;
-    width: 2px;
-    height: 24px;
-    content: "";
-    background: @colorHeader;
-    transform: rotate(-45deg);
-  }
-
   .download {
     background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-    width: 320px;
+    width: 314px;
     &:before {
       content: " ";
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 40% bottom;
       display: block;
       height: 463px;
-      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 40% bottom;
+
     }
+  }
+  .download-app {
+    display: flex;
+    flex-direction: column;
   }
 
 }
@@ -115,56 +80,21 @@
     color: @colorHeader;
   }
 
-  .logo {
-    position: relative;
-  }
-
-  .logo-top {
-    width: 147px;
-    height: 50px;
-  }
-
-  .menu-btn {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 45px;
-    height: 26px;
-    cursor: pointer;
-    border: none;
-    background: 0 0;
-    font-size: 0;
-    outline: none;
-  }
-
-  .menu-btn:before {
-    position: absolute;
-    top: 0;
-    left: 22px;
-    display: block;
-    width: 2px;
-    height: 24px;
-    content: "";
-    background: @colorHeader;
-    transform: rotate(45deg);
-  }
-
-  .menu-btn:after {
-    position: absolute;
-    top: 0;
-    left: 22px;
-    display: block;
-    width: 2px;
-    height: 24px;
-    content: "";
-    background: @colorHeader;
-    transform: rotate(-45deg);
-  }
-
   .download {
+    position: relative;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
-    width: 650px;
-    height: 460px;
+    width: 640px;
+    &:before {
+      content: " ";
+      display: block;
+      height: 463px;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 80% bottom;
+    }
+  }
+  .download-app {
+    position: absolute;
+    top: 100px;
+    left: 100px;
   }
 }
 
