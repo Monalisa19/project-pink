@@ -1,7 +1,11 @@
-@media (min-width: 330px) {
+@media (min-width: 320px) {
   .advantages {
     position: relative;
-    width: 330px;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    text-align: center;
     background: @bgAdvantages;
     &:after {
       content: "";
@@ -19,31 +23,19 @@
   }
 
   .advantages__title {
-    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: @colorFont;
+    margin-bottom: 14px;
+    margin-top: 0;
   }
 
   .advantages__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: @fontColorHeader;
     margin: 0;
-  }
-
-  .offer {
-    width: 280px;
-    margin: 0 auto;
-    background: @colorHeader;
-  }
-
-  .offer__question {
-    font-size: 24px;
-    font-weight: lighter;
-    line-height: 29px;
-    text-align: center;
-  }
-
-  .offer__answer {
-    font-size: 24px;
-    font-weight: lighter;
-    line-height: 29px;
-    text-align: center;
   }
 }
 
@@ -54,30 +46,14 @@
     width: 660px;
   }
   .advantages {
-    &:before {
+    &:after{
       content: "";
       position: absolute;
-      background: url(../img/iphone-screen-3-tablet@1x.png);
-      bottom: 0;
-      left: 24px;
+      background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat;
+      background-size: contain;
       width: 268px;
       height: 481px;
     }
-  }
-
-  .offer {
-    width: 660px;
-    padding: 40px 0 60px;
-  }
-
-  .offer__question {
-    font-size: 24px;
-    font-weight: 300;
-  }
-
-  .offer__answer {
-    width: 280px;
-    margin: 0 auto;
   }
 
   .advantages__item {
@@ -90,19 +66,9 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .advantages{
-    width: 1200px;
-  }
-  .offer {
-    width: 1200px;
-  }
-  .offer__question {
-    font-size: 50px;
-  }
-  .offer__answer {
-    font-size: 50px;
-    width: 460px;
+    width: 960px;
   }
 }
 

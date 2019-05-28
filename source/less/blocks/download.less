@@ -1,0 +1,49 @@
+@media (min-width: 320px) {
+
+  .download {
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    width: 314px;
+    &:before {
+      content: " ";
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 40% bottom;
+      display: block;
+      height: 463px;
+
+    }
+  }
+
+  .download-app {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 660px) {
+
+  .download {
+    position: relative;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    width: 640px;
+    &:before {
+      content: " ";
+      display: block;
+      height: 463px;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 80% bottom;
+    }
+  }
+
+  .download-app {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+
+}
+
+@media (min-width: 960px) {
+  .download {
+    background: url("../img/bg-back-desktop@2x.jpg") no-repeat center;
+    width: 100%;
+  }
+
+}

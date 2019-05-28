@@ -1,5 +1,55 @@
-@media (min-width: 330px){
-  .research {
+@media (min-width: 320px) {
+  .research__time-icon {
     display: none;
+  }
+
+  .research-wrapper__time {
+    display: none;
+  }
+
+  .research-wrapper__text {
+    display: none;
+  }
+
+  .research-wrapper__link {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .research {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .research-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+  }
+
+  .research__time-icon {
+    display: block;
+    width: 238px;
+    height: 276px;
+    background: red;
+    margin-right: 50px;
+    margin-left: 40px;
+  }
+
+  .research-wrapper__time {
+    display: block;
+  }
+
+  .research-wrapper__text {
+    display: block;
+  }
+
+  .research-wrapper__link {
+    display: block;
+    font-size: 14px;
+    color: @colorFontNumber;
   }
 }
