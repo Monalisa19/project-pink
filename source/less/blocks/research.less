@@ -32,15 +32,33 @@
 
   .research__time-icon {
     display: block;
+    position: relative;
     width: 238px;
     height: 276px;
-    background: red;
     margin-right: 50px;
     margin-left: 40px;
   }
 
   .research-wrapper__time {
     display: block;
+  }
+
+  .svg-icon {
+    width: 238px;
+    height: 276px;
+  }
+
+  .research__time-icon {
+    &:before {
+      position: absolute;
+      content: "24";
+      font-size: 96px;
+      left: 64px;
+      top: 96px;
+      font-weight: 700;
+      color: @colorFontNumber;
+
+    }
   }
 
   .research-wrapper__text {
