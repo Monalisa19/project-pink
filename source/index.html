@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -136,11 +136,20 @@
       <h3 class="review__user-name">Николай Петров</h3>
       <div class="review__user-age">25 лет, водитель трамвая</div>
     </blockquote>
-    <div class="slider-controls">
-      <button class="slider-controls__toggle  slider-controls__toggle--price" type="button"></button>
-      <button class="slider-controls__toggle  slider-controls__toggle--active slider-controls__toggle--price" type="button"></button>
-      <button class="slider-controls__toggle  slider-controls__toggle--price" type="button"></button>
-    </div>
+    <section class="slider">
+      <div class="container">
+        <div class="slider-controls">
+          <i class="slider-controls__toggle slider-controls__toggle--active"></i>
+          <i class="slider-controls__toggle"></i>
+          <i class="slider-controls__toggle"></i>
+        </div>
+        <ul class="slider__list">
+          <li class="slider__item"></li>
+          <li class="slider__item"></li>
+          <li class="slider__item"></li>
+        </ul>
+      </div>
+    </section>
   </section>
   <section class="price">
     <div class="price__slider">
@@ -148,16 +157,22 @@
         <tr class="price__table-header">
           <td class="price__name  price__name--extend"></td>
           <td class="price__name">
-            <span class="price__package">База</span>
-            <span class="price__total">1,99 USD</span>
+            <div class="price__name-wrapper">
+              <span class="price__package">База</span>
+              <span class="price__total">1,99 USD</span>
+            </div>
           </td>
           <td class="price__name  price__name--popular">
-            <span class="price__package">Стандарт</span>
-            <span class="price__total">3,99 USD</span>
+            <div class="price__name-wrapper">
+              <span class="price__package">Стандарт</span>
+              <span class="price__total">3,99 USD</span>
+            </div>
           </td>
           <td class="price__name price__name--anlim">
-            <span class="price__package">Анлим</span>
-            <span class="price__total">9,99 USD</span>
+            <div class="price__name-wrapper">
+              <span class="price__package">Анлим</span>
+              <span class="price__total">9,99 USD</span>
+            </div>
           </td>
         </tr>
         <tr class="price__table-caption">
@@ -179,12 +194,6 @@
           <td class="price__option  price__option--yes">yes</td>
         </tr>
       </table>
-      <div class="slider-controls">
-        <button class="slider-controls__toggle  slider-controls__toggle--price" type="button"></button>
-        <button class="slider-controls__toggle  slider-controls__toggle--active
-              slider-controls__toggle--price" type="button"></button>
-        <button class="slider-controls__toggle  slider-controls__toggle--price" type="button"></button>
-      </div>
     </div>
   </section>
 </main>
