@@ -1,38 +1,63 @@
 @media (min-width: 320px){
   .price__table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-collapse: collapse;
+    transform: translateX(-501px);
     padding-top: 85px;
     padding-bottom: 46px;
     margin: 0 auto;
     width: 320px;
   }
 
+  .price {
+    overflow: hidden;
+    padding: 0;
+  }
+
   .price__name {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     background-color: #283645;
+  }
+
+  .price__name--extend {
+    width: 235px;
+    background: transparent;
+    display: block;
   }
 
   .price__name--popular {
     position: relative;
     border-left: 2px solid #e5e5e5;
     border-right: 2px solid #e5e5e5;
+    &:before {
+      position: absolute;
+      content: " ";
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      top: 0;
+      left: -2px;
+      width: 74px;
+      height: 73px;
+    }
   }
+
+  .price__hit {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 78px;
+    height: 71px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transform: rotate(-46deg);
+    margin: 0;
+    font-size: 14px;
+  }
+
 
   .price__name-wrapper {
-    width: 150px;
-    height: 58px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 70px 20px;
-  }
-
-  .price__table-header {
-    display: flex;
-    flex-direction: row;
+    width: 280px;
+    padding: 20px 0;
   }
 
   .price__package {
@@ -49,6 +74,7 @@
     line-height: 30px;
     font-weight: 100;
     color: #ffffff;
+    margin: 0;
   }
 
   .price__option, .price__option--no, .price__option--yes {
@@ -57,6 +83,44 @@
     padding-left: 23px;
     width: 276px;
     border: 2px solid #e5e5e5;
+    background: white;
   }
+
+  .price__option--yes {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: " ";
+      background-image: url("../img/icon-yes.svg");
+      background-repeat: no-repeat;
+      background-size: 31px 21px;
+      width: 31px;
+      height: 30px;
+      top: 10px;
+      right: 19px;
+    }
+  }
+
+   .price__option--no {
+     position: relative;
+     &:after {
+       position: absolute;
+       content: " ";
+       background-image: url("../img/icon-no.svg");
+       background-repeat: no-repeat;
+       background-size: 27px 26px;
+       width: 31px;
+       height: 30px;
+       top: 10px;
+       right: 19px;
+     }
+  }
+
+   .price__slider {
+     padding-top: 50px;
+     padding-bottom: 50px;
+     background: #f2f2f2;
+   }
+
 
 }
