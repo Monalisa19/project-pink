@@ -1,0 +1,56 @@
+@media (min-width:320px) {
+  .photo-editor__btn {
+    position: relative;
+    padding-top: 38px;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 0;
+      background-color: @bgLine;
+    }
+  }
+
+  .photo-editor__btn-inner {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+
+  .btn {
+    padding: 15px 30px 16px;
+    border: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+  }
+  .btn--upload {
+    border: 3px solid #d22856;
+    border-radius: 30px;
+    color: #d22856;
+    background-color: transparent;
+  }
+  .btn--cancel {
+    border: 3px solid #283645;
+    border-radius: 30px;
+    color: #283645;
+    background-color: transparent;
+    opacity: 0.1;
+  }
+
+  .photo-editor__upload-btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .photo-editor__cancel-btn {
+    width: 100%;
+  }
+
+}
