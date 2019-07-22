@@ -1,0 +1,46 @@
+@media (min-width: 320px) {
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social__btn {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(40,54,69,.1);
+    border-radius: 50%;
+    margin: 5px 6px;
+  }
+  .social__btn:hover {
+    border-color: @fontColorHeader;
+  }
+
+  .social__icon {
+    position: absolute;
+  }
+
+  .social__icon--twitter {
+    top: 17px;
+    left: 16px;
+    width: 18px;
+    height: 15px;
+  }
+
+  .social__icon--facebook {
+    top: 15px;
+    left: 20px;
+    width: 9px;
+    height: 19px;
+  }
+
+  .social__icon--youtube {
+    top: 18px;
+    left: 19px;
+    width: 15px;
+    height: 14px;
+  }
+}

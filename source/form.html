@@ -72,46 +72,50 @@
           <input class="user__input  user__input--text" type="text" name="patronymic" id="patronymic" required value="Ну и отчество тоже *">
         </div>
       </div>
-      <fieldset class="form-travels">
-        <legend class="form-travels__title">Ваши безбашенные достижения в путешествии</legend>
-        <div class="form-travels__checkbox">
-          <input class="form-travels__input" type="checkbox" name="advance" id="advance-one" checked>
-          <label class="form-travels__label" for="advance-one">Сделал селфи с акулой</label>
+      <div class="form__fieldset form__fieldset--achievements">
+        <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+        <div class="form__fieldset-inner">
+          <div class="form__field-checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="advance" id="advance-one" checked>
+            <label class="form__checkbox-label" for="advance-one">Сделал селфи с акулой</label>
+          </div>
+          <div class="form__field-checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="advance" id="advance-two" checked>
+            <label class="form__checkbox-label" for="advance-two">Обгорел на пляже</label>
+          </div>
+          <div class="form__field-checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="advance" id="advance-free">
+            <label class="form__checkbox-label" for="advance-free">Видел Чака Нориса</label>
+          </div>
+          <div class="form__field-checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="advance" id="advance-four">
+            <label class="form__checkbox-label" for="advance-four">Накупил сувениров</label>
+          </div>
+          <div class="form__field-checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="advance" id="advance-five" checked>
+            <label class="form__checkbox-label" for="advance-five">Удержал башню</label>
+          </div>
+          <div class="form__field-checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="advance" id="advance-six">
+            <label class="form__checkbox-label" for="advance-six">Разгромил отель</label>
+          </div>
         </div>
-        <div class="form-travels__checkbox">
-          <input class="form-travels__input" type="checkbox" name="advance" id="advance-two" checked>
-          <label class="form-travels__label" for="advance-two">Обгорел на пляже</label>
+      </div>
+      <div class="form__fieldset form__fieldset--contacts">
+        <h2 class="form__title form__title--contacts">Контактная информация</h2>
+        <div class="form__fieldset-inner">
+          <div class="form__fields-number">
+            <label class="form__fields-number--label" for="phone">номер телефона</label>
+            <input class="form__fields-number--input" type="text" id="phone" value="Номер, пожалуйста">
+          </div>
+          <div class="form__fields-number">
+            <label class="form__fields-number--label" for="mail">адрес почты</label>
+            <input class="form__fields-number--input" type="text" id="mail" required value="Введите почту*">
+          </div>
         </div>
-        <div class="form-travels__checkbox">
-          <input class="form-travels__input" type="checkbox" name="advance" id="advance-free">
-          <label class="form-travels__label" for="advance-free">Видел Чака Нориса</label>
-        </div>
-        <div class="form-travels__checkbox">
-          <input class="form-travels__input" type="checkbox" name="advance" id="advance-four">
-          <label class="form-travels__label" for="advance-four">Накупил сувениров</label>
-        </div>
-        <div class="form-travels__checkbox">
-          <input class="form-travels__input" type="checkbox" name="advance" id="advance-five" checked>
-          <label class="form-travels__label" for="advance-five">Удержал башню</label>
-        </div>
-        <div class="form-travels__checkbox">
-          <input class="form-travels__input" type="checkbox" name="advance" id="advance-six">
-          <label class="form-travels__label" for="advance-six">Разгромил отель</label>
-        </div>
-      </fieldset>
-      <fieldset class="form-fields form-fields-contacts">
-        <legend class="form-fields__title">Контактная информация</legend>
-        <div class="form-fields__number">
-          <label class="form-fields__label--date" for="phone">номер телефона</label>
-          <input class="form-fields__input--date" type="text" id="phone"  value="Номер, пожалуйста">
-        </div>
-        <div class="form-fields__number">
-          <label class="form-fields__label--date" for="mail">адрес почты</label>
-          <input class="form-fields__input--date" type="text" id="mail" required value="Введите почту*">
-        </div>
-      </fieldset>
-      <fieldset class="form-fields form-fields-app">
-        <legend class="form-fields__title">С каким приложение путешествовали?</legend>
+      </div>
+      <div class="form-fields form-fields-app">
+        <h2 class="form-fields__title">С каким приложение путешествовали?</h2>
         <div class="form-fields__radio">
           <input class="form-fields__radio-input" type="radio" id="ios" name="attachment" value="Pink для iOS" checked>
           <label class="form-fields__radio-label" for="ios">Pink для iOS</label>
@@ -124,15 +128,15 @@
           <input class="form-fields__radio-input" type="radio" id="windows-phone" name="attachment" value="Windows Phone">
           <label class="form-fields__radio-label" for="windows-phone">Windows Phone</label>
         </div>
-      </fieldset>
-      <fieldset class="form-fields form-fields-emotions">
-        <legend class="form-fields__title">Опишите свои эмоции</legend>
+      </div>
+      <div class="form-fields form-fields-emotions">
+        <h2 class="form-fields__title">Опишите свои эмоции</h2>
         <div class="form__fields-inner">
           <div class="form-fields__textarea-field  form-fields__textarea-fields--emotions">
             <textarea class="form-fields__textarea  form-fields__textarea--emotions" name="message" id="message" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </div>
-      </fieldset>
+      </div>
       <button class="form-btn  form-btn--submit" type="submit">отправить форму</button>
         <div class="field"><sup>*</sup>__ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
     </form>
@@ -156,7 +160,7 @@
     </div>
     <div class="footer-social">
       <a class="social__btn social__btn--twitter" href="#">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663" fill="#d22856">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  class="social__icon social__icon--twitter" width="17.5" height="14.663" fill="#d22856">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226
             1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239
             6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412
@@ -165,13 +169,13 @@
         </svg>
       </a>
       <a class="social__btn social__btn--facebook" href="#">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944" fill="#d22856">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  class="social__icon social__icon--facebook" width="8.673" height="18.944" fill="#d22856">
           <path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387
             1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/>
         </svg>
       </a>
       <a class="social__btn social__btn--youtube" href="#">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96" fill="#d22856">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  class="social__icon social__icon--youtube" width="14.64" height="13.96" fill="#d22856">
           <path
             d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
         </svg>

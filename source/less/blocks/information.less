@@ -1,0 +1,45 @@
+@media (min-width: 320px){
+  .information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .user__label {
+    margin-left: 23px;
+    text-transform: uppercase;
+    color: @colorFontNumber;
+    line-height: 30px;
+  }
+
+  .user__input {
+    display: block;
+    box-sizing: border-box;
+    padding: 14px 20px 15px;
+    width: 100%;
+    border: 2px solid @bgAdvantages;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 30px;
+    color: @fontColorHeader;
+    margin-top: 6px;
+  }
+
+  .user__input:hover {
+    border-color: @fontColorHeader;
+    border-radius: 2px;
+  }
+
+  .user__input:active {
+    border-color: @colorFontNumber;
+    border-radius: 2px;
+  }
+
+}
