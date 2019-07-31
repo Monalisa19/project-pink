@@ -114,31 +114,37 @@
           </div>
         </div>
       </div>
-      <div class="form-fields form-fields-app">
-        <h2 class="form-fields__title">С каким приложение путешествовали?</h2>
-        <div class="form-fields__radio">
-          <input class="form-fields__radio-input" type="radio" id="ios" name="attachment" value="Pink для iOS" checked>
-          <label class="form-fields__radio-label" for="ios">Pink для iOS</label>
-        </div>
-        <div class="form-fields__radio">
-          <input class="form-fields__radio-input" type="radio" id="android" name="attachment" value="Pink на Android">
-          <label class="form-fields__radio-label" for="android">Pink на Android</label>
-        </div>
-        <div class="form-fields__radio">
-          <input class="form-fields__radio-input" type="radio" id="windows-phone" name="attachment" value="Windows Phone">
-          <label class="form-fields__radio-label" for="windows-phone">Windows Phone</label>
-        </div>
-      </div>
-      <div class="form-fields form-fields-emotions">
-        <h2 class="form-fields__title">Опишите свои эмоции</h2>
-        <div class="form__fields-inner">
-          <div class="form-fields__textarea-field  form-fields__textarea-fields--emotions">
-            <textarea class="form-fields__textarea  form-fields__textarea--emotions" name="message" id="message" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <div class="form__fieldset form__fieldset--app">
+        <h2 class="form__title form__title--app">С каким приложение путешествовали?</h2>
+        <div class="form__fieldset-inner">
+          <div class="form__field-radio">
+            <input class="form__radio-input" type="radio" id="ios" name="attachment" value="Pink для iOS"
+                   checked>
+            <label class="form__radio-label" for="ios">Pink для iOS</label>
+          </div>
+          <div class="form__field-radio">
+            <input class="form__radio-input" type="radio" id="android" name="attachment" value="Pink на Android">
+            <label class="form__radio-label" for="android">Pink на Android</label>
+          </div>
+          <div class="form__field-radio">
+            <input class="form__radio-input" type="radio" id="windows-phone" name="attachment"
+                   value="Windows Phone">
+            <label class="form__radio-label" for="windows-phone">Windows Phone</label>
           </div>
         </div>
       </div>
-      <button class="form-btn  form-btn--submit" type="submit">отправить форму</button>
-        <div class="field"><sup>*</sup>__ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
+      <div class="form__fieldset form__fieldset--emotions">
+        <h2 class="form__title form__title--emotions">Опишите свои эмоции</h2>
+        <div class="form__fieldset-inner">
+          <div class="form__textarea-fields  form__textarea-fields--emotions">
+            <textarea class="form__textarea  form__textarea--emotions" name="message" id="message" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="form__button">
+      <button class="form__btn  form__btn--submit" type="submit">отправить форму</button>
+        <div class="form__note"><sup class="form__note-simbol">*</sup>__обязательные поля</div>
+      </div>
     </form>
   </main>
   <footer class="page-footer">

@@ -1,24 +1,26 @@
-.photos {
-  display: flex;
-  flex-direction: column;
-}
+@media (min-width: 320px) {
+  .photos {
+    display: flex;
+    flex-direction: column;
+  }
 
-.panorama {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    content: 'панорама дня';
-    width: 140px;
-    height: 36px;
-    font-size: 12px;
-    line-height: 36px;
-    text-transform: uppercase;
-    text-align: center;
-    color: @colorHeader;
-    background-color: @colorFontNumber;
+  .panorama {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      content: 'панорама дня';
+      width: 140px;
+      height: 36px;
+      font-size: 12px;
+      line-height: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      color: @colorHeader;
+      background-color: @colorFontNumber;
+    }
   }
 }
